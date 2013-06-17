@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>talkDetail</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="talkDetail.css" rel="stylesheet" />
+    <script src="talkDetail.js"></script>
+</head>
+<body>
+
+    <div class="speakersListTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item">
+            <div class="item-personne">
+                <img class="item-image" src="#" data-win-bind="src: avatar; alt: fullname; style.backgroundColor: talk.track.type WinJSDemo.Utils.colorConverter" />
+            </div>
+			<div class="item-biography">
+				<h3 class="item-title win-type-large" data-win-bind="innerText: fullname"></h3>
+				<p class="biography-description" data-win-bind="innerText: description WinJSDemo.ViewModel.DetailTalk.textConverter; style.backgroundColor: talk.track.type WinJSDemo.Utils.colorConverter"></p>
+			</div>
+            
+        </div>
+    </div>
+
+
+    <div class="talkDetail fragment">
+
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle" data-win-bind="innerText: bindedTalk.title"></span>
+            </h1>
+        </header>
+
+        <section aria-label="Main content" role="main" id="main">
+
+            <article id="description">
+
+                <header>
+                    <h2 class="win-type-x-large">Présentation</h2>
+					<h3 class="win-type-large">Description de l'intervention</h3>
+                </header>
+                 
+                <p data-win-bind="innerText: bindedTalk.description; style.backgroundColor: bindedTalk.track.type WinJSDemo.Utils.colorConverter"></p>
+
+                <div id="detail">
+					
+					<h3 class="win-type-large">Détails</h3>
+
+                    <p id="room" data-win-bind="innerText: bindedTalk.room; style.backgroundColor: bindedTalk.track.type WinJSDemo.Utils.colorConverter"></p>
+                    <p id="format" data-win-bind="innerText: bindedTalk.format; style.backgroundColor: bindedTalk.track.type WinJSDemo.Utils.colorConverter"></p>
+
+                    <p id="time" data-win-bind="innerText: bindedTalk.time; style.backgroundColor: bindedTalk.track.type WinJSDemo.Utils.colorConverter"><span data-win-bind="innerText: bindedTalk.track.jour.date WinJSDemo.Utils.dateConverterLong"></span></p>
+                    <p id="type" data-win-bind="innerText: bindedTalk.track.type; style.backgroundColor: bindedTalk.track.type WinJSDemo.Utils.colorConverter"></p>
+
+                </div>    
+
+            </article>
+
+            <article id="speakers">
+
+                <header>
+                    <h2 class="win-type-x-large">Intervenants</h2>
+                </header>
+
+                <div class="speakersList" 
+                    data-win-control="WinJS.UI.ListView"
+                    data-win-options="{ itemDataSource: WinJSDemo.ViewModel.DetailTalk.bindedSpeakers.dataSource, 
+                    itemTemplate: select('.speakersListTemplate'),
+                    layout: {type: WinJS.UI.GridLayout},
+                    selectionMode: 'none', 
+                    tapBehavior: 'none', 
+                    swipeBehavior: 'none',
+					hoverBehavior: 'none'}">
+                </div>
+
+            </article>
+
+        </section>
+    </div>
+</body>
+</html>

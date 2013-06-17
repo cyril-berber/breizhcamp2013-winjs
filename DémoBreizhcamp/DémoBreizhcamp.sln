@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "DémoBreizhcamp", "DémoBreizhcamp.jsproj", "{FF2F361B-B48E-4760-8F80-50A14AB33E0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D19B533E-30BA-401C-A6B6-2427E8071C3B}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|ARM.Build.0 = Debug|ARM
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|ARM.Deploy.0 = Debug|ARM
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|x64.ActiveCfg = Debug|x64
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|x64.Build.0 = Debug|x64
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|x64.Deploy.0 = Debug|x64
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|x86.ActiveCfg = Debug|x86
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|x86.Build.0 = Debug|x86
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Debug|x86.Deploy.0 = Debug|x86
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|ARM.ActiveCfg = Release|ARM
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|ARM.Build.0 = Release|ARM
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|ARM.Deploy.0 = Release|ARM
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|x64.ActiveCfg = Release|x64
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|x64.Build.0 = Release|x64
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|x64.Deploy.0 = Release|x64
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|x86.ActiveCfg = Release|x86
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|x86.Build.0 = Release|x86
+		{FF2F361B-B48E-4760-8F80-50A14AB33E0A}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,186 @@
+﻿
+.programme .programmelist p {
+    margin: 0;
+}
+
+.programme .programmelist {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.programme .semanticZoomDiv {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+    
+    .programme .programmelist .win-horizontal.win-viewport .win-surface{
+        margin-bottom: 60px;
+        margin-left: 45px;
+        margin-right: 115px;
+        margin-top: 10px;
+    }
+
+    .programme .programmelist .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+        height: 125px;
+        width: 250px;
+    }
+
+        .programme .programmelist .item .item-image {
+            -ms-grid-row-span: 2;
+        }
+
+        .programme .programmelist .item .item-overlay {
+            -ms-grid-row: 2;
+            -ms-grid-rows: 1fr 21px;
+            display: -ms-grid;
+            padding: 6px 15px 2px 15px;
+        }
+
+            .programme .programmelist .item .item-overlay .item-title {
+                -ms-grid-row: 1;
+                overflow: hidden;
+                width: 220px;
+            }
+
+            .programme .programmelist .item .item-overlay .item-shade-subtitle {
+                -ms-grid-row: 2;
+                display: -ms-grid;
+                -ms-grid-columns: 1fr 1fr;
+                -ms-grid-rows: 1fr;
+                width: 220px;
+            }
+                .programme .programmelist .item .item-overlay .item-shade-subtitle .item-subtitle1 {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 1;
+                }
+                .programme .programmelist .item .item-overlay .item-shade-subtitle .item-subtitle2 {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 2;
+                }
+				
+				
+	.programme .zoomedOutListView .win-horizontal.win-viewport .win-surface{
+        margin-bottom: 60px;
+        margin-left: 45px;
+        margin-right: 115px;
+        margin-top: 10px;
+    }
+	
+	.programme .zoomedOutListView .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 47px;
+        display: -ms-grid;
+        height: 78px;
+        width: 75px;
+		text-align: center;
+    }
+	
+		.programme .zoomedOutListView .item .item-title{
+			-ms-grid-row: 1;
+			background-color: #68036A;
+			font-size: 1.4em;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.programme .zoomedOutListView .item .item-subtitle{
+			-ms-grid-row: 2;
+			margin: 0;
+			padding-top: 10px;
+			background-color: #964199;
+		}
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .programme .programmelist .win-horizontal.win-viewport .win-surface{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+	
+	.programme .zoomedOutListView .win-horizontal.win-viewport .win-surface{
+		margin-left: 20px;
+        margin-right: 20px;
+    }
+	
+	.programme .programmelist .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 0;
+		display: -ms-grid;
+        height: 60px;
+        width: 100%;
+    }
+	
+	.programme .programmelist .item .item-image {
+            -ms-grid-row-span: 2;
+        }
+
+        .programme .programmelist .item .item-overlay {
+            -ms-grid-row: 1;
+            -ms-grid-rows: 1fr 20px;
+            display: -ms-grid;
+        }
+
+            .programme .programmelist .item .item-overlay .item-title {
+                -ms-grid-row: 1;
+                overflow: hidden;
+                width: 100%;
+            }
+
+            .programme .programmelist .item .item-overlay .item-shade-subtitle {
+                -ms-grid-row: 2;
+                display: -ms-grid;
+                -ms-grid-columns: 1fr 1fr;
+                -ms-grid-rows: 1fr;
+				width: 100%;
+            }
+                .programme .programmelist .item .item-overlay .item-shade-subtitle .item-subtitle1 {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 1;
+                }
+                .programme .programmelist .item .item-overlay .item-shade-subtitle .item-subtitle2 {
+                    -ms-grid-row: 1;
+                    -ms-grid-column: 2;
+                }
+			
+	
+	.programme .zoomedOutListView .item {
+        -ms-grid-columns: 30px 1fr ;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+        height: 50px;
+        width: 100%;
+		background-color: #68036A;
+		vertical-align: middle;
+    }
+	
+		.programme .zoomedOutListView .item .item-title{
+			-ms-grid-column: 2;
+			font-size: 1.4em;
+			margin: 0;
+			padding: 0;
+			padding-top: 10px;
+		}
+		
+		.programme .zoomedOutListView .item .item-subtitle{
+			-ms-grid-column: 1;
+			margin: 0;
+			padding-top: 10px;
+		}
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .programme .programmelist .win-horizontal.win-viewport .win-surface{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}

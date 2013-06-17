@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>programme</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="programme.css" rel="stylesheet" />
+    <script src="programme.js"></script>
+</head>
+
+<body>
+
+    <!--Templates-->
+    <div class="headertemplate" data-win-control="WinJS.Binding.Template">
+        <p class="group-title win-type-ellipsis" data-win-bind="textContent: time"></p>
+        <span class="group-title win-type-ellipsis" data-win-bind="textContent: track.jour.date WinJSDemo.ViewModel.Programme.dateConverter"></span>
+    </div>
+
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item">
+            <div class="item-image" data-win-bind="style.backgroundColor: track.type WinJSDemo.Utils.colorConverter" ></div>
+            <div class="item-overlay">
+                <h4 class="item-title" data-win-bind="textContent: title"></h4>
+                <div class="item-shade-subtitle">
+                    <h6 class="item-subtitle1 win-type-ellipsis" data-win-bind="textContent: room"></h6>
+                    <h6 class="item-subtitle2 win-type-ellipsis" data-win-bind="textContent: format"></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="semanticZoomTemplate" data-win-control="WinJS.Binding.Template" >
+        <div class="item">
+            <h3 class="item-title" data-win-bind="textContent: time"></h3>
+            <h4 class="item-subtitle" data-win-bind="textContent: track.jour.date WinJSDemo.ViewModel.Programme.dateConverterShort"></h4>
+        </div>
+    </div>
+
+
+    <div class="programme fragment">
+
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Programme complet</span>
+            </h1>
+        </header>
+
+        <section aria-label="Main content" role="main">
+
+            <div class="semanticZoomDiv" data-win-control="WinJS.UI.SemanticZoom"> 
+
+                <div class="programmelist win-selectionstylefilled" 
+                    aria-label="List of groups" 
+                    data-win-control="WinJS.UI.ListView" 
+                    data-win-options="{ selectionMode: 'none' }">
+                </div>
+
+                <div class="zoomedOutListView"
+                        data-win-control="WinJS.UI.ListView"
+                        data-win-options="{ selectionMode: 'none'}">
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

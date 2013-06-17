@@ -1,0 +1,70 @@
+﻿
+/** Styles généraux */
+#menuList a{
+    color: white;
+}
+#menuList a:hover{
+    color: white;
+}
+
+
+nav a{
+    display: block;
+    color: white;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+/** particularité des types de vue */
+@media screen and (-ms-view-state: fullscreen-landscape) {
+	
+    .homepage section[role=main] {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    #menuList {
+       
+    }
+
+    #menuList p{
+        margin: 0;
+	    width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .homepage section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #menuList {
+       
+    }
+
+    #menuList a p{
+        margin: 0;
+	    width: 100px;
+        height: 50px;
+        padding-top: 0;
+	    padding-left: 0;
+    }
+
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .homepage section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
